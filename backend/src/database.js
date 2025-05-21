@@ -13,7 +13,7 @@ const sequelize = new Sequelize(
     dialectOptions: {
       ssl: {
         require: true,
-        rejectUnauthorized: false
+        rejectUnauthorized: false // Importante para Render y la mayoría de servicios cloud
       }
     }
   }
