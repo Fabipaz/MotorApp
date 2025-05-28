@@ -14,6 +14,7 @@ const News = require('./models/News');
 const newsRoutes = require('./routes/news');
 const usersRoutes = require('./routes/users');
 
+
 const cors = require('cors');
 app.use(cors());
 
