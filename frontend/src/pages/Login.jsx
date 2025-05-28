@@ -26,7 +26,7 @@ export default function Login() {
 
   return (
     <div className="login-container">
-      <h2>Iniciar sesión</h2>
+      <h1>Iniciar sesión</h1>
       <form onSubmit={handleSubmit}>
         <input
           type="email"

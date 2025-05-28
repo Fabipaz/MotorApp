@@ -8,6 +8,7 @@ import Chat from './pages/Chat';
 import Perfil from './pages/Perfil';
 import Noticias from './pages/Noticias';
 import Admin from './pages/Admin';
+import Footer from './components/Footer';
 import './App.css';
 
 function PrivateRoute({ children }) {
@@ -20,7 +21,7 @@ function Home() {
   const { user } = useAuth();
   return (
     <div>
-      <h2>Bienvenido, {user?.nombre}</h2>
+      <h1>Bienvenido, {user?.nombre}</h1>
       <p>¡Explora la app desde el menú superior!</p>
     </div>
   );
@@ -41,6 +42,7 @@ export default function App() {
         <Route path="/noticias" element={<PrivateRoute><Noticias /></PrivateRoute>} />
         <Route path="/admin" element={<PrivateRoute><Admin /></PrivateRoute>} />
       </Routes>
+      <Footer />
     </Router>
   );
 }

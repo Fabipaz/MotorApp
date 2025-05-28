@@ -27,6 +27,7 @@ const User = sequelize.define('User', {
     type: DataTypes.ENUM('usuario', 'admin'),
     allowNull: false,
     defaultValue: 'usuario',
+    
   },
 }, {
   timestamps: true,

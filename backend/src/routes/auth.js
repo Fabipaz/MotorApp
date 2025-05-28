@@ -7,6 +7,7 @@ const router = express.Router();
 
 // Registro
 router.post('/register', async (req, res) => {
+  console.log(req.body);
   try {
     const { nombre, email, password } = req.body;
     if (!nombre || !email || !password) {
