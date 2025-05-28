@@ -19,7 +19,7 @@ const cors = require('cors');
 app.use(cors());
 
 const http = require('http');
-const { Server } = require('socket.io-client');
+const { Server } = require('socket.io');
 const server = http.createServer(app);
 const io = new Server(server, {
   cors: {
